@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css"/>
+    <link rel="stylesheet" href="slider/rangeslider.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+
+    <!--:::::::::::::::::::::::::::::Start TopNav:::::::::::::::::::::::::::::-->
+    <div class="top-nav">
+        <div class="uk-grid-small uk-flex container top-nav-container" uk-grid>
+            <div class="top-nav-left-box uk-width-expand@m ">
+                <p>FOREX, COMMODITIES, AND CRYPTOCURRENCY CFD MARKETS.</p>
+            </div>
+            <div class="top-nav-social-icon  uk-width-1-4@m">
+
+                <a href="index.html" class="uk-link"><span uk-icon="icon: facebook"></span></a>
+                <a href="index.html" class="uk-link"><span uk-icon="icon: instagram"></span></a>
+                <a href="index.html" class="uk-link"><span uk-icon="icon: linkedin"></span></a>
+                <a href="index.html" class="uk-link"><span uk-icon="icon: twitter"></span></a>
+
+
+            </div>
+        </div>
+    </div>
+    <!--:::::::::::::::::::::::::::::End TopNav:::::::::::::::::::::::::::::-->
+
+    <!--:::::::::::::::::::::::::::::Start NavBar:::::::::::::::::::::::::::::-->
+    <div style="background-color: #fff;"
+         uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+        <nav uk-navbar style="position: relative; z-index: 980;">
+            <div class="container uk-flex uk-flex-between uk-visible@m">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#"><img src="images/Logo.png"></a></li>
+                </ul>
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">About Us</a></li>
+                    <li class="uk-active"><a href="#">OUR APPROACH</a></li>
+                    <li class="uk-active"><a href="#">OUR PRODUCTS</a></li>
+                    <li class="uk-active"><a href="#">Testimonials</a></li>
+                </ul>
+
+                <ul>
+                    <a class="uk-button uk-button-default" href="#">Contact Us</a>
+
+                </ul>
+            </div>
+            <div class="container uk-flex uk-flex-between uk-hidden@m">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#"><img src="images/Logo.png"></a></li>
+                </ul>
+                <ul>
+                    <a class="menu-button uk-margin-small-right " type="button"
+                       uk-toggle="target: #offcanvas-push"><span uk-icon="icon: menu; ratio: 2"></span>
+                    </a>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+    <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <img src="images/Logo.png"></a>
+
+            <ul class="uk-navbar-nav uk-display-block">
+                <li class="uk-active"><a href="#">About Us</a></li>
+                <li class="uk-active"><a href="#">OUR APPROACH</a></li>
+                <li class="uk-active"><a href="#">OUR PRODUCTS</a></li>
+                <li class="uk-active"><a href="#">Testimonials</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--:::::::::::::::::::::::::::::End NavBar:::::::::::::::::::::::::::::-->
+
+    <!--:::::::::::::::::::::::::::::Start Panner:::::::::::::::::::::::::::::-->
+    <div class="panner-box">
+        <div class="container uk-flex uk-flex-center  panner-container">
+            <div class="uk-flex-middle" uk-grid>
+
+                <div class="uk-width-1-2@l intro-text-box">
+                    <h5 class="primary-h5">Build your fortune with the right partners</h5>
+                    <p class="big-h3 text-dark sub-title-intro">Lorem Ipsum
+                        is simply dummy text </p>
+                    <hr class="uk-divider-small">
+
+                    <p class="primary-p text-dark intro-p">We are an international
+                        financial institution
+                        with over thirty five years of cumulative experience
+                        in the investment advisory industry.</p>
+                </div>
+                <div class="uk-width-1-2@l slider-box">
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body uk-text-center slider-range-card">
+                            <h5 class="primary-h5">Make Your Money work For You</h5>
+
+                            <h3 class="big-h3">Passive, Hassle Free Income</h3>
+                            <hr class="uk-divider-small divider-panner">
+                            <div class="slide-box">
+                                <div class="uk-flex uk-flex-between top-scroll">
+                                    <div>AED 50,000</div>
+                                    <div>AED 175,000</div>
+                                    <div>AED 300,000</div>
+                                </div>
+                                <input type="range" min="50" max="300" data-rangeslider>
+                                <output id="slider-investment-value"></output>
+                            </div>
+
+
+                            <div class="slide-box">
+                                <div class="uk-flex uk-flex-between top-scroll">
+                                    <div>1 YEAR</div>
+                                    <div>5 YEARS</div>
+                                    <div>10 YEARS</div>
+                                </div>
+                                <input type="range" min="0" max="10" data-rangeslider>
+                                <output id="slider-year-value"></output>
+                            </div>
+                            <div>
+                                <div class="uk-flex uk-flex-between uk-text-left result-box">
+                                    <div>
+                                        <p class="uk-margin-remove title">Your Investment</p>
+                                        <p id="investment-value" class="uk-text-bold uk-h3 uk-margin-remove result">AED
+                                            150,000</p>
+                                    </div>
+                                    <div>
+                                        <p class="uk-margin-remove title">Term</p>
+                                        <p id="year-value" class="uk-text-bold uk-h3 uk-margin-remove result">5
+                                            Years</p>
+                                    </div>
+                                    <div>
+                                        <p class="uk-margin-remove title">Your Returns</p>
+                                        <p class="uk-text-bold uk-h3 uk-margin-remove result">AED 155,000</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="vertical-margin-normal">
+                                <button class="uk-button uk-button-primary uk-button-large">SCHEDULE A MEETING
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--:::::::::::::::::::::::::::::End Panner:::::::::::::::::::::::::::::-->
+
+    <!--:::::::::::::::::::::::::::::Start Services:::::::::::::::::::::::::::::-->
+
+    <section class="services-section">
+        <div class="container">
+            <div class="uk-grid-small uk-child-width-expand@s uk-text-center services-box" uk-grid>
+                <div class="service-item">
+                    <h3>AVERAGE ANNUAL NET PROFIT</h3>
+                    <h2 class="number">39.9%</h2>
+                </div>
+                <div class="service-item">
+                    <h3>INSIGHT INTO YOUR TRADING ACCOUNT</h3>
+                    <h2 class="number">24/7</h2>
+                </div>
+                <div class="service-item">
+                    <h3>MONEY INVESTED IN DIRHAMS</h3>
+                    <h2 class="number">450M</h2>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!--:::::::::::::::::::::::::::::End Services:::::::::::::::::::::::::::::-->
+
+
+    <!--:::::::::::::::::::::::::::::Start Our Approach:::::::::::::::::::::::::::::-->
+    <section class="our-approach-section uk-padding-large-bottom">
+        <div class="container">
+            <div class="uk-child-width-expand@m uk-text-left uk-margin-large-top uk-margin-large-bottom"
+                 uk-grid>
+                <div class="approach-item uk-text-uppercase">
+                    <h5 class="primary-h5">Our Approach</h5>
+                    <h3 class="big-h3">
+                        Customized investment strategies to client’s specific needs
+                    </h3>
+                    <hr class="uk-divider-small">
+                </div>
+                <div>
+                    <p class="primary-p">
+                        We pride ourselves on the commitment we show
+                        to our investors. Our credibility lies within
+                        our investment methodology, built on
+                        four key pillars under which we operate.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match approach-cards " uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img src="images/Transparency.png">
+                        <h5 class="uk-card-title">Transparency</h5>
+                        <hr class="uk-divider-small">
+
+                        <p>We believe that trust and transparency are paramount and cultivate relationships with
+                            investors and partners based on mutual trust and complete openness.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img src="images/Safety.png">
+                        <h5 class="uk-card-title">Safety</h5>
+                        <hr class="uk-divider-small">
+
+                        <p>We commit to the highest standards of risk-management in all investments. We use modern tools
+                            to ensure we are operating in a safe and sustainable manner.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img src="images/Excellence.png">
+                        <h5 class="uk-card-title">Excellence</h5>
+                        <hr class="uk-divider-small">
+
+                        <p>We strive for excellence in everything we do. We pride ourselves on the level of excellence
+                            provided in our financial performance, customer service, and organizational efficiency.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img src="images/Innovation.png">
+                        <h5 class="uk-card-title">Innovation</h5>
+                        <hr class="uk-divider-small">
+
+                        <p>We believe in providing our clients with products that deliver superior performance and
+                            access to forward-looking investments in line with their long-term objectives.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!--:::::::::::::::::::::::::::::End Our Approach:::::::::::::::::::::::::::::-->
+
+    <!--:::::::::::::::::::::::::::::Start Our Products:::::::::::::::::::::::::::::-->
+
+    <section class="our-products-section uk-padding-large-bottom">
+        <div class="our-products-bg uk-flex uk-flex-center">
+            <div class="container uk-margin-auto">
+                <div class="small-container">
+                    <h5 class="primary-h5">OUR PRODUCTS</h5>
+                    <h3 class="big-h3 text-white">
+                        Invest wisely to enjoy an average
+                        annual net profit of 39.9% </h3>
+                    <hr class="uk-divider-small">
+                </div>
+            </div>
+        </div>
+        <div class="uk-position-relative" style="margin-top: -3.9rem">
+
+            <ul uk-tab="swiping: false" class="uk-tab uk-flex-center">
+                <li class="uk-active tap-item"><a href="#" aria-expanded="true">DYNAMIC</a></li>
+                <li class=" tap-item"><a href="#" aria-expanded="false">SECURE</a></li>
+                <li class=" tap-item"><a href="#" aria-expanded="false">DIGITAL ASSETS</a></li>
+            </ul>
+
+            <ul class="uk-switcher uk-margin">
+                <li class="uk-active">
+                    <div class="container">
+                        <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match approach-cards " uk-grid>
+                            <div>
+                                <h3 class="uk-text-bold uk-text-uppercase text-dark">
+                                    Invest wisely to enjoy an average
+                                    annual net profit of 39.9% </h3>
+                                <hr class="uk-divider-small">
+                                <p>Our trading partners are leading brokers of Forex,
+                                    Commodities and Cryptocurrencies CFD including
+                                    Noor Capital in Dubai and ADS Securities in Abu Dhabi.</p>
+                                <p>Since 2010 we have provided investors with an average of around 40% annual net
+                                    profit, with the lowest net annual profit in the last decade being 21.6% which is
+                                    significantly above market return.</p>
+                                <hr>
+                                <p>OUR TRADING PARTNERS <img src="./images/PARTNERS.jpg"></p>
+                            </div>
+                            <div>
+                                <div class="uk-flex uk-flex-right">
+                                    <div class="img-gray-box-small"></div>
+                                </div>
+                                <img src="images/dynamic.jpg">
+                                <div class="uk-flex uk-flex-right">
+                                    <div class="img-gray-box-small"></div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="">
+                    <div class="container">
+                        <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match approach-cards " uk-grid>
+                            <div>
+                                <h3 class="uk-text-bold uk-text-uppercase text-dark">
+                                    Invest wisely to enjoy an average
+                                    annual net profit of 39.9% </h3>
+                                <hr class="uk-divider-small">
+                                <p>Our trading partners are leading brokers of Forex,
+                                    Commodities and Cryptocurrencies CFD including
+                                    Noor Capital in Dubai and ADS Securities in Abu Dhabi.</p>
+                                <p>Since 2010 we have provided investors with an average of around 40% annual net
+                                    profit, with the lowest net annual profit in the last decade being 21.6% which is
+                                    significantly above market return.</p>
+                                <hr>
+                                <p>OUR TRADING PARTNERS <img src="./images/PARTNERS.jpg"></p>
+                            </div>
+                            <div>
+                                <div class="uk-flex uk-flex-right">
+                                    <div class="img-gray-box-small"></div>
+                                </div>
+                                <img src="images/dynamic.jpg">
+                                <div class="uk-flex uk-flex-right">
+                                    <div class="img-gray-box-small"></div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </li>
+                <li class="">
+                    <div class="container">
+                        <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match approach-cards " uk-grid>
+                            <div>
+                                <h3 class="uk-text-bold uk-text-uppercase text-dark">
+                                    Invest wisely to enjoy an average
+                                    annual net profit of 39.9% </h3>
+                                <hr class="uk-divider-small">
+                                <p>Our trading partners are leading brokers of Forex,
+                                    Commodities and Cryptocurrencies CFD including
+                                    Noor Capital in Dubai and ADS Securities in Abu Dhabi.</p>
+                                <p>Since 2010 we have provided investors with an average of around 40% annual net
+                                    profit, with the lowest net annual profit in the last decade being 21.6% which is
+                                    significantly above market return.</p>
+                                <hr>
+                                <p>OUR TRADING PARTNERS <img src="./images/PARTNERS.jpg"></p>
+                            </div>
+                            <div>
+                                <div class="uk-flex uk-flex-right">
+                                    <div class="img-gray-box-small"></div>
+                                </div>
+                                <img src="images/dynamic.jpg">
+                                <div class="uk-flex uk-flex-right">
+                                    <div class="img-gray-box-small"></div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </li>
+
+            </ul>
+            <div class="container">
+                <hr class="vertical-margin-large">
+            </div>
+        </div>
+
+    </section>
+
+    <!--:::::::::::::::::::::::::::::End Our Products:::::::::::::::::::::::::::::-->
+
+    <!--:::::::::::::::::::::::::::::About Start:::::::::::::::::::::::::::::-->
+    <section class="about-us-section uk-padding-large-bottom">
+        <div class="uk-flex uk-flex-center">
+            <div class="container uk-margin-auto uk-text-center">
+                <div class="small-container">
+                    <h5 class="primary-h5">about us</h5>
+                    <h3 class="big-h3">
+                        Innovative Products
+                        For Your Investment Needs</h3>
+                    <hr class="uk-divider-small">
+
+                    <p class="primary-p vertical-margin-normal">Our performance is distinguished by a record of superior
+                        risk
+                        adjusted returns customized for individuals, across an expanding range of
+                        products and through various economical conditions.</p>
+                </div>
+
+                <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match about-description-box uk-text-left"
+                     uk-grid>
+                    <div>
+                        <p class="uk-text-light">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                            an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                            has survived not only five centuries, but also the leap into electronic typesetting,
+                            remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not</p>
+                    </div>
+
+                    <div>
+                        <p class="uk-text-light"> orem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an </p>
+                    </div>
+
+
+                </div>
+
+                <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match approach-cards vertical-margin-normal about-items"
+                     uk-grid>
+                    <div>
+                        <div class="uk-flex-middle" uk-grid>
+                            <div class="uk-width-1-3">
+                                <img src="images/about1.png" alt="Image">
+                            </div>
+                            <div class="uk-width-2-3 uk-padding-remove">
+                                <p class="primary-p uk-padding-remove">Driven by Extensive
+                                    Expertise</p></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-flex-middle" uk-grid>
+                            <div class="uk-width-1-3">
+                                <img src="images/about2.png" alt="Image">
+                            </div>
+                            <div class="uk-width-2-3 uk-padding-remove">
+                                <p class="primary-p uk-padding-remove">Full Insights and
+                                    Monitoring</p></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-flex-middle" uk-grid>
+                            <div class="uk-width-1-3">
+                                <img src="images/about3.png" alt="Image">
+                            </div>
+                            <div class="uk-width-2-3 uk-padding-remove">
+                                <p class="primary-p uk-padding-remove">High Standards of
+                                    Risk Management</p></div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="vertical-margin-normal">
+                    <button class="uk-button uk-button-primary uk-button-large">SCHEDULE A MEETING
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--:::::::::::::::::::::::::::::About End:::::::::::::::::::::::::::::-->
+
+    <!--:::::::::::::::::::::::::::::Testimonials Start:::::::::::::::::::::::::::::-->
+    <section class="testimonials-section  ">
+        <div class="uk-flex uk-flex-center vertical-padding-normal">
+            <div class="container uk-margin-auto uk-text-center">
+                <div class="small-container">
+                    <h3 class="big-h3">testimonials</h3>
+                    <p class="primary-p">Here is what our
+                        clients/partners say about us
+                    </p>
+                    <hr class="uk-divider-small">
+                </div>
+            </div>
+
+        </div>
+        <div class="container vertical-padding-normal uk-padding-remove-top">
+            <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slider="center: true">
+
+                <ul class="uk-slider-items uk-grid uk-text-center">
+                    <li class="uk-width-1-1">
+                        <p class="text-dark slider-item">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.
+                            Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially
+                            unchanged</p>
+                        <img src="images/tes-item.png" alt="">
+                        <h5 class="primary-h5 text-primary">John</h5>
+                        <p class="text-dark uk-margin-remove">Manager</p>
+                    </li>
+                    <li class="uk-width-1-1">
+                        <p class="text-dark slider-item">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.
+                            Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially
+                            unchanged</p>
+                        <img src="images/tes-item.png" alt="">
+                        <h5 class="primary-h5 text-primary">John</h5>
+                        <p class="text-dark uk-margin-remove">Manager</p>
+                    </li>
+
+                </ul>
+
+                <a class="arrow-btn uk-position-center-left uk-position-small" href="#" uk-slidenav-previous
+                   uk-slider-item="previous"></a>
+                <a class="arrow-btn uk-position-center-right uk-position-small" href="#" uk-slidenav-next
+                   uk-slider-item="next"></a>
+
+            </div>
+
+        </div>
+    </section>
+    <!--:::::::::::::::::::::::::::::Testimonials End:::::::::::::::::::::::::::::-->
+
+
+    <!--:::::::::::::::::::::::::::::Grow Start:::::::::::::::::::::::::::::-->
+    <section class="grow-your-portfolio-section uk-padding-large-bottom">
+        <div class="uk-flex uk-flex-center">
+            <div class="container uk-margin-auto uk-text-center">
+                <div class="map-box">
+                    <div class="small-container">
+                        <h3 class="big-h3">
+                            Grow Your Portfolio</h3>
+                        <p class="primary-p">Global Experience. Local Support.
+                            With over AED450 million+ investments completed.</p>
+                    </div>
+                    <div>
+                        <img src="images/grow.png" class="map-image">
+                    </div>
+
+                    <div class="uk-text-left">
+                        <h5 class="primary-h5" style="letter-spacing: -1px;"> WHEN IT COMES TO TRUST &
+                            TRANSPARENCY</h5>
+                        <h3 class="big-h3">
+                            WE RESIDE HIGH</h3>
+                        <p class="text-dark vertical-margin-normal"><span uk-icon="location"></span>
+                            Lorem Ipsum is simply dummy</p>
+                        <button class="uk-button uk-button-default uk-button-large">GET LOCATION
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--:::::::::::::::::::::::::::::Grow End:::::::::::::::::::::::::::::-->
+
+    <!--:::::::::::::::::::::::::::::Discuss Start:::::::::::::::::::::::::::::-->
+    <section class="discuss-section uk-padding-large-bottom">
+        <div class="discuss-bg uk-flex uk-flex-center">
+            <div class="container uk-margin-auto">
+
+                <div class="small-container">
+                    <h5 class="primary-h5">LET’S DISCUSS
+                        INVESTMENT</h5>
+                    <h3 class="big-h3 text-white">
+                        We make your business our future,
+                        handling investments with expertise</h3>
+                    <p class="light-p text-white">
+                        We manage portfolios/trading accounts for both individual and institutional investors.
+                        Let
+                        us take
+                        you to the next level of financial security.
+                    </p>
+
+                    <button class="uk-button uk-button-primary uk-button-large">SCHEDULE A MEETING
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <!--:::::::::::::::::::::::::::::Discuss End:::::::::::::::::::::::::::::-->
+
+    <!--:::::::::::::::::::::::::::::Footer Start:::::::::::::::::::::::::::::-->
+    <footer class="footer">
+        <div class="container">
+            <div class="uk-text-center" uk-grid>
+                <div class="uk-width-1-3@m">
+                    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-large-top" uk-grid>
+                        <div class="uk-text-left">
+                            <img class="footer-logo" src="images/Logo.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-expand@m ">
+                    <div class="uk-grid-collapse uk-child-width-expand@m uk-child-width-1-2@s uk-text-center uk-margin-large-top"
+                         uk-grid>
+                        <div class="footer-cols">
+                            <h3 class="uk-text-bold">QUICK LINKS</h3>
+                            <ul class="footer-links">
+                                <li><a>About Us</a></li>
+                                <li><a>Our Approach</a></li>
+                                <li><a>Our Products</a></li>
+                                <li><a> Testimonials</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="footer-cols">
+                                <h3 class="uk-text-bold">OFFICE</h3>
+                                <ul class="footer-links">
+                                    <p>Lorem Ipsum is simply
+                                        dummy text of the
+                                        printing and typesetting industry.</p>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="footer-cols">
+                                <h3 class="uk-text-bold">Email</h3>
+                                <ul class="footer-links">
+                                    <li><p>info@text.com</p></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="footer-cols">
+                                <h3 class="uk-text-bold">Phone </h3>
+                                <ul class="footer-links">
+                                    <li><p>+971 4 000 0000</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="vertical-margin-normal">
+
+
+                    <div class="uk-grid-collapse uk-child-width-expand@m uk-child-width-1-2@s uk-text-center"
+                         uk-grid>
+
+                        <div class="uk-text-left copyrights-box uk-margin-large-bottom">
+                            <p class="copyrights-p">Copyrights 2020. All Rights Reserved</p>
+                            <h4>Disclaimer</h4>
+                            <p class="disclaimer-description">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                the
+                                1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                specimen book.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--:::::::::::::::::::::::::::::Footer End:::::::::::::::::::::::::::::-->
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./slider/rangeslider.min.js"></script>
+    <script>
+        $(function () {
+
+            var $document = $(document);
+            var selector = '[data-rangeslider]';
+            var $element = $(selector);
+
+            // For ie8 support
+            var textContent = ('textContent' in document) ? 'textContent' : 'innerText';
+
+            // Example functionality to demonstrate a value feedback
+            function valueOutput(element) {
+                var value = element.value;
+                var output = element.parentNode.getElementsByTagName('output')[0] || element.parentNode.parentNode.getElementsByTagName('output')[0];
+                output[textContent] = value;
+            }
+
+            $document.on('input', 'input[type="range"], ' + selector, function (e) {
+                valueOutput(e.target);
+            });
+
+            // Basic rangeslider initialization
+            $element.rangeslider({
+
+                // Deactivate the feature detection
+                polyfill: false,
+
+                // Callback function
+                onInit: function () {
+                    valueOutput(this.$element[0]);
+                },
+
+                // Callback function
+                onSlide: function (position, value) {
+                    $('#investment-value').text('AED ' + $('#slider-investment-value').val() + ',000')
+                    $('#year-value').text($('#slider-year-value').val() + ' Years')
+                },
+
+                // Callback function
+                onSlideEnd: function (position, value) {
+                    console.log('onSlideEnd');
+                    console.log('position: ' + position, 'value: ' + value);
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
